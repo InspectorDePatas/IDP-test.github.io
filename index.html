@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Odette Template - Index</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style type = "text/css">
+.clockStyle {
+	background-color:#000;
+	/*border:#999 2px inset;*/
+	padding:6px;
+	color:#0FF;
+	font-family:"digital-clock-font", Gadget, sans-serif;
+    font-size:16px;
+    font-weight:bold;
+	letter-spacing: 2px;
+	display:inline;
+}
+</style>
+
+
+</head>
+
+<body>
+
+
+<script type="text/javascript">
+var pass1 = 'Odette';
+do{
+password=prompt("Por favor, ingresa la contraseña:");    
+   if (password == "Odette"){
+   	alert("Correcto!, presione Ok para continuar");}
+   else{
+   	alert("Contraseña incorrecta, por favor ... vuelva a intentarlo");}
+}while(password!=pass1);
+</script>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top bg-dark">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center">
+      	<i class="icofont-clock-time"></i>
+      	  <div id="clockDisplay" class="clockStyle"></div>
+<script>
+function renderTime() {
+	var currentTime = new Date();
+	var diem = "AM";
+	var h = currentTime.getHours();
+	var m = currentTime.getMinutes();
+    var s = currentTime.getSeconds();
+	setTimeout('renderTime()',1000);
+    if (h == 0) {
+		h = 12;
+	} else if (h > 12) { 
+		h = h - 12;
+		diem="PM";
+	}
+	if (h < 10) {
+		h = "0" + h;
+	}
+	if (m < 10) {
+		m = "0" + m;
+	}
+	if (s < 10) {
+		s = "0" + s;
+	}
+    var myClock = document.getElementById('clockDisplay');
+	myClock.textContent = h + ":" + m + ":" + s + " " + diem;
+	myClock.innerText = h + ":" + m + ":" + s + " " + diem;
+}
+renderTime();
+</script>
+        
+      </div>
+      <div class="d-flex align-items-center">
+        <i class="icofont-phone"></i> Whatsapp: +51 927 879 808
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>
+
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Inicio</a></li>
+          <li><a href="#about">Introducción</a></li>
+          <li><a href="#services">Texto #01</a></li>
+          <li><a href="#departments">Texto #02</a></li>
+
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+<!--     <script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
+
+    <input type="button" value="PLAY" onclick="play()">
+    <audio id="audio" src="assets/metal-slug-5-music-fierce-battle.mp3"></audio> -->
+
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)">
+          <div class="container">
+            <h2>Bienvenida <span>Odette</span></h2>
+            <p><b>Esta es una página web de prueba, espero que sea de tu agrado.</b></p>
+            <a href="#about" class="btn-get-started scrollto">Seguir leyendo ...</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)">
+          <div class="container">
+            <h2>Texto #01</h2>
+            <p><b>No existe algo malo en jugar videojuegos o leer.</b></p>
+            <a href="#departments" class="btn-get-started scrollto">Seguir leyendo ...</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)">
+          <div class="container">
+            <h2>Texto #02</h2>
+            <p><b>Algunas citas textuales.</b></p>
+            <a href="#departments" class="btn-get-started scrollto">Seguir leyendo ...</a>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div>
+  </section><!-- End -->
+
+  <main id="main">
+
+    <!-- ======= Section ======= -->
+    <section id="featured-services" class="featured-services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box text-center" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="icofont-ebook"></i></div>
+              <h4 class="title"><a href="#final">End</a></h4>
+              <p class="description">– Atajo hacia el final de la página. –</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box text-center" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="icofont-download-alt"></i></div>
+              <h4 class="title"><a href="">Descargas (inhabilitado)</a></h4>
+              <p class="description">– Links a los materiales utilizados en la página web. –</p>
+            </div>
+          </div>
+
+      </div>
+    </section><!-- End Section -->
+
+    <!-- ======= Section ======= -->
+    <section id="cta" class="cta bg-dark">
+      <div class="container bg-dark" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3>Contenido</h3>
+        </div>
+
+      </div>
+    </section><!-- End Section -->
+
+    <!-- ======= Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>1.1- Introducción</h2>
+          <p><b>Normalmente existe cierta confusión entre los términos "Página web (website)" y "Blog", trataré de aclarar de manera concisa algunas de las diferencias existentes.</b></p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <img src="assets/img/about.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>* Página web:</h3>
+            <p class="font-italic">
+Una página web es estática: su contenido no se actualiza con frecuencia.
+
+Y básicamente sirven para vender o dar a conocer una marca, una empresa, o productos concretos.
+            </p>
+            <ul>
+              <li><i class="icofont-check-circled"></i> Mayormente requiere de un buen nivel de programación.</li>
+              <li><i class="icofont-check-circled"></i> Es más versátil que un blog ... por ejemplo, podemos colocar un reloj digital, acceso a pagos con tarjeta, insertar hipervínculos, etc. El límite es la imaginación.</li>
+              <li><i class="icofont-check-circled"></i> Tendencia a ser unidireccional (No existe diálogo entre el autor y los receptores), lo cual es parcialmente malo.</li>
+            </ul>
+            <h3>* Blog:</h3>
+            <p class="font-italic">
+En un blog, el autor escribe artículos sobre temas que le interesan como películas, negocios, música, moda, deportes, juegos, marketing, psicología, cocina, etc.
+
+Y lo más importante de todo: el contenido se actualiza con bastante frecuencia.
+            </p>
+                        <ul>
+              <li><i class="icofont-check-circled"></i> Es de fácil manejo, no requiere de conocimientos sobre programación.</li>
+              <li><i class="icofont-check-circled"></i> Presenta limitaciones, dependerá de la página web que se utilize para la creación de esta ... entre ellas tenemos wix, blogger, google forms, etc.</li>
+              <li><i class="icofont-check-circled"></i> Normalmente existe una continua interacción entre el autor y sus seguidores (contenido dinámico).</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Section -->
+
+
+
+    <!-- ======= Section ======= -->
+    <section id="features" class="features">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right">
+
+          </div>
+  <iframe style="display: block; margin: auto;" src="http://www.youtube.com/embed/31HfP81oWDI"
+   width="715" height="350" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+      </div>
+    </section><!-- End  Section -->
+
+
+
+    <!-- ======= Section ======= -->
+    <section id="cta" class="cta bg-dark">
+      <div class="container bg-dark" data-aos="zoom-in">
+
+      </div>
+    </section><!-- End Cta Section -->
+
+
+    <!-- ======= Section ======= -->
+    <section id="services" class="testimonials">
+      <div class="container pt-4" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>1.2-La lectura es provechosa. Por otro lado, también es posible rescatar algo de los videojuegos.</h2>
+
+        </div>
+
+        <div class="owl-carousel testimonials-carousel" >
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+En parte es útil jugar videojuegos, el conocimiento sobre ellos es un requisito fundamental para el machine learning/deep learning en ingeniería ... 
+para tu caso, mientras más historias conozcas, mucho mejor ... por ejemplo, sería más pesado el tener ideas para escribir una 
+historia sobre ciencia ficción sin la existencia de libros, películas o videojuegos sobre el tema.
+- Aunque todo con moderación claro, obviamente va a ser malo el llegar al extremo de la ludopatía ... pero, mientras se le pueda sacar provecho a algo, no va a existir problema, tenemos que seguir descubriendo mundos en esas historias, y crear nuestros propios textos gracias a la lectura :3.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+            <h3>El inspector de patas</h3>
+            <h4>???</h4>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section><!-- End Section -->
+
+
+    <!-- ======= Section ======= -->
+    <section id="cta" class="cta bg-dark">
+      <div class="container bg-dark" data-aos="zoom-in">
+
+      </div>
+    </section><!-- End Section -->
+
+
+    <section id="departments" class="departments">
+    	<p><br/><br/></p> 
+      <div class="container" data-aos="fade-up">
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 mb-12 mb-lg-12">
+          	<h2><b>1.3- Algunas citas textuales.</b></h2>
+          	<p><br/><br/></p>
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" href="#tab-1">Texto A<End/a>
+                 
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+				<a class="nav-link active show" href="#tab-2">Texto B<End/a>
+             </a>
+ 
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-12 mb-12 mb-lg-12">
+            <div class="tab-content">
+
+              <div class=" active show" id="tab-1">
+       		<p><br/><br/><br/></p>      <!-- ESPACIO EN BLANCO (FILAS) -->
+                <img src="assets/img/departments-1.png" alt="" class="pt-4 img-fluid" >
+ 
+              </div>
+              <div class="" id="tab-2">
+ 				<p><br/><br/><br/></p>
+                <img src="assets/img/departments-2.png" alt=""  class="img-fluid">
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End  Section -->
+
+    <section id="cta" class="cta bg-dark">
+      <div class="container bg-dark" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3></h3>
+        </div>
+
+      </div>
+    </section><!-- End Section -->
+
+
+    <!-- ======= Section ======= -->
+    <section id="final" class="features">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right">
+
+          </div>
+  <iframe style="display: block; margin: auto;" src="https://www.youtube.com/embed/kXQe0ueWwQE"
+   width="715" height="350" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+      </div>
+    </section><!-- End  Section -->
+	
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 order-2 order-lg-6">
+            <img class="" style="width: 700px;" src="assets/img/ODETTE.png">  
+        </div>
+    </div>
+</div>
+
+            <!-- <img src="assets/img/ODETTE.png" alt="" class="" > -->
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+
+
+              <div class="social-links mt-3">
+
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+      
+      </div>
+      <div class="credits">
+  
+   
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
